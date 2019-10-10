@@ -28,31 +28,23 @@ RUN echo "clone vim plugins" && \
     git clone --depth=1 https://github.com/sickill/vim-pasta && \
     git clone --depth=1 https://github.com/Yggdroot/indentLine && \
     git clone --depth=1 https://github.com/wincent/loupe && \
-    git clone --depth=1 https://github.com/mattn/webapi-vim && \
     git clone --depth=1 https://github.com/wincent/terminus && \
     git clone --depth=1 https://github.com/vim-scripts/vim-auto-save && \
     git clone --depth=1 https://github.com/ntpeters/vim-better-whitespace && \
     git clone --depth=1 https://github.com/editorconfig/editorconfig-vim && \
     git clone --depth=1 https://github.com/tpope/vim-projectionist && \
     git clone --depth=1 https://github.com/machakann/vim-highlightedyank && \
-    git clone --depth=1 https://github.com/janko-m/vim-test && \
     git clone --depth=1 https://github.com/vim-scripts/ReplaceWithRegister && \
     git clone --depth=1 https://github.com/kana/vim-textobj-indent && \
     git clone --depth=1 https://github.com/kana/vim-textobj-line && \
     git clone --depth=1 https://github.com/kana/vim-textobj-user && \
-    git clone --depth=1 https://github.com/junegunn/fzf.vim && \
     git clone --depth=1 https://github.com/airblade/vim-gitgutter && \
     git clone --depth=1 https://github.com/tpope/vim-fugitive && \
-    git clone --depth=1 https://github.com/shumphrey/fugitive-gitlab.vim && \
-    git clone --depth=1 https://github.com/tpope/vim-rhubarb && \
     git clone --depth=1 https://github.com/altercation/vim-colors-solarized && \
     git clone --depth=1 https://github.com/vim-airline/vim-airline && \
     git clone --depth=1 https://github.com/vim-airline/vim-airline-themes && \
-    git clone --depth=1 https://github.com/edkolev/tmuxline.vim
-
-
-# Install fzf
-RUN git clone --depth 1 https://github.com/junegunn/fzf.git ${HOME}/.fzf && ${HOME}/.fzf/install --all
+    git clone --depth=1 https://github.com/junegunn/fzf.vim && \
+    git clone --depth 1 https://github.com/junegunn/fzf.git ${HOME}/.fzf && ${HOME}/.fzf/install --all
 
 # Set working directory to /workspace
 WORKDIR /workspace
