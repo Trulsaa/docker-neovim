@@ -343,3 +343,8 @@ let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
+
+"GitGutter colors
+highlight GitGutterAdd    guifg=#009900
+highlight GitGutterChange guifg=#bbbb00
+highlight GitGutterDelete guifg=#ff2222
